@@ -1,0 +1,29 @@
+.NewAlert {
+  margin: 8px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.NewAlert.info {
+  background-color: rgb(49, 49, 213);
+}
+.NewAlert.success {
+  background-color: green;
+}
+.NewAlert.error {
+  background-color: red;
+}
+.NewAlert.warning {
+  background-color: orange;
+}
+
+.NewAlert.is-outlined {
+  border: 20px solid rgb(76, 185, 68);
+}
+
+.NewAlert:focus,
+.NewAlert:hover {
+  color: rgb(63, 58, 58);
+}

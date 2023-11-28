@@ -1,7 +1,7 @@
 import './App.css';
-import './components/index.css';
+// import './index.css';
 import Alert from './Alert/Alert';
-import NewAlert from './NewAlert/NewAlert';
+// import NewAlert from './NewAlert/NewAlert';
 import Card from './Card/Card';
 import Panel from './Panel/Panel.jsx';
 import Box from './Box/Box';
@@ -15,7 +15,7 @@ export const stilParagraph = {
   fontSize: 10,
 };
 
-function App() {
+export const App = () => {
   return (
     <main>
       <h1>Practica React</h1>
@@ -24,12 +24,12 @@ function App() {
       <h2>Exercitiul 2</h2>
       <Alert>Alert </Alert>
       <h2>Exercitiul 3</h2>
-      <NewAlert>Mesajul este fara varianta</NewAlert>
+      {/* <NewAlert>Mesajul este fara varianta</NewAlert>
       <NewAlert variant="success" isOutlined={true}>
         New Alert: Succes!
       </NewAlert>
       <NewAlert variant="error">New Alert: Error!</NewAlert>
-      <NewAlert variant="warning">New Alert: Warning!</NewAlert>
+      <NewAlert variant="warning">New Alert: Warning!</NewAlert> */}
       <h2>Exercitiul 4</h2>
       <Card />
       <h2>Exercitiul 5</h2>
@@ -42,6 +42,4 @@ function App() {
       <div className="p-8 bg-blue-500 my-4">Lucrul cu tailwindcss</div>
     </main>
   );
-}
-
-export default App;
+};
